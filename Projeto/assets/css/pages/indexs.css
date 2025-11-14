@@ -13,7 +13,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  color: var(--azul-texto-primario);
+  color: var(--texto-primario);
   width: 100%;
   height: fit-content;
   gap: 80px;
@@ -35,7 +35,7 @@ body {
     height: fit-content;
     scrollbar-width: none;
     overflow: scroll;
-    background-color: var(--azul-botao);
+    background-color: var(--botao);
     border-radius: 20px;
 
     h2 {
@@ -80,7 +80,7 @@ body {
   .mais-e-menos-visitados {
     display: flex;
     flex-wrap: wrap;
-    color: var(--azul-texto-primario);
+    color: var(--texto-primario);
     width: 1650px;
     height: fit-content;
     gap: 110px;
@@ -95,7 +95,7 @@ body {
       height: fit-content;
       scrollbar-width: none;
       overflow: scroll;
-      background-color: var(--azul-botao);
+      background-color: var(--botao);
       border-radius: 20px;
 
       h2 {
@@ -153,14 +153,14 @@ body {
         font-size: 40px;
         font-weight: 700;
         margin-bottom: 10px;
-        color: var(--azul-detalhes);
+        color: var(--detalhes);
         width: 1050px;
       }
 
       .linha-dourada {
         width: 1050px;
         height: 5px;
-        background-color: var(--azul-detalhes);
+        background-color: var(--detalhes);
         margin-bottom: 50px;
       }
       p {
@@ -180,5 +180,143 @@ body {
         height: 100%;
       }
     }
+  }
+}
+
+/* Responsive Design for Index Page */
+@media (max-width: 1700px) {
+  .main-index .mais-populares,
+  .main-index .mais-e-menos-visitados,
+  .main-index .readscape {
+    width: 95%;
+  }
+
+  .main-index .readscape div h3,
+  .main-index .readscape div .linha-dourada,
+  .main-index .readscape div p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-index {
+    gap: 50px;
+  }
+
+  .main-index .mais-populares,
+  .main-index .mais-e-menos-visitados .card-visitados {
+    padding: 20px 30px;
+  }
+
+  .main-index .mais-populares h2,
+  .main-index .mais-e-menos-visitados .card-visitados h2 {
+    font-size: 36px;
+  }
+
+  .main-index .mais-e-menos-visitados {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .main-index .mais-e-menos-visitados .card-visitados {
+    width: 95%;
+  }
+
+  .main-index .readscape {
+    height: auto;
+    gap: 50px;
+  }
+
+  .main-index .readscape div h3 {
+    font-size: 32px;
+  }
+
+  .main-index .readscape div p {
+    font-size: 20px;
+  }
+
+  .main-index .readscape a {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    gap: 50px;
+  }
+
+  .main-index {
+    gap: 30px;
+  }
+
+  .main-index .mais-populares,
+  .main-index .mais-e-menos-visitados .card-visitados {
+    padding: 15px 20px;
+  }
+
+  .main-index .mais-populares h2,
+  .main-index .mais-e-menos-visitados .card-visitados h2 {
+    font-size: 28px;
+  }
+
+  .main-index .mais-populares .livros,
+  .main-index .mais-e-menos-visitados .card-visitados .livro-menor {
+    gap: 30px;
+  }
+
+  .main-index .mais-populares .livros a .livro img,
+  .main-index .mais-e-menos-visitados .card-visitados a .livro img {
+    width: 200px;
+    height: 300px;
+  }
+
+  .main-index .mais-populares .livros a .livro .p-maior,
+  .main-index .mais-e-menos-visitados .card-visitados a .livro .p-maior {
+    font-size: 24px;
+  }
+
+  .main-index .mais-populares .livros a .livro .p-menor,
+  .main-index .mais-e-menos-visitados .card-visitados a .livro .p-menor {
+    font-size: 18px;
+  }
+
+  .main-index .readscape div h3 {
+    font-size: 28px;
+  }
+
+  .main-index .readscape div p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-index .mais-populares h2,
+  .main-index .mais-e-menos-visitados .card-visitados h2 {
+    font-size: 24px;
+  }
+
+  .main-index .mais-populares .livros a .livro img,
+  .main-index .mais-e-menos-visitados .card-visitados a .livro img {
+    width: 150px;
+    height: 225px;
+  }
+
+  .main-index .mais-populares .livros a .livro .p-maior,
+  .main-index .mais-e-menos-visitados .card-visitados a .livro .p-maior {
+    font-size: 20px;
+  }
+
+  .main-index .mais-populares .livros a .livro .p-menor,
+  .main-index .mais-e-menos-visitados .card-visitados a .livro .p-menor {
+    font-size: 16px;
+  }
+
+  .main-index .readscape div h3 {
+    font-size: 24px;
+  }
+
+  .main-index .readscape div p {
+    font-size: 16px;
   }
 }

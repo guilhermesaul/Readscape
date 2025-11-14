@@ -1,11 +1,11 @@
+@import "../global/global.css";
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #001a4d;
-  color: white;
 }
 
 .header-logado {
-  background-color: #003080;
+  background-color: var(--fundo-secundario);
   padding: 40px;
   display: flex;
   justify-content: space-between;
@@ -16,14 +16,14 @@ body {
   list-style: none;
   display: flex;
   gap: 20px;
-  color: white;
+  color: var(--texto-primario);
   text-decoration: none;
   font-weight: bold;
 }
 
 a:hover, #atual {
   text-decoration: underline;
-  color: #4db8ff;
+  color: var(--hover-e-cards);
 }
 
 #perfil {
@@ -34,10 +34,11 @@ h2 {
   text-align: center;
   margin: 40px 0 20px;
   font-size: 28px;
+  color: var(--texto-primario);
 }
 
 .perfil {
-  background-color: #002060;
+  background-color: var(--fundo-secundario);
   padding: 40px 20px;
   max-width: 600px;
   margin: 40px auto;
@@ -58,20 +59,25 @@ h2 {
 
 .perfil label {
   font-weight: bold;
+  color: var(--texto-primario);
 }
 
 .perfil input {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #001a3d;
-  color: white;
+  background-color: var(--fundo-perfil-e-input);
+  color: var(--texto-primario);
 }
 
 .livros-favoritos {
   margin: 40px auto;
   text-align: center;
   max-width: 1000px;
+}
+
+.livros-favoritos h2 {
+  color: var(--texto-primario);
 }
 
 .livros {
@@ -85,10 +91,11 @@ h2 {
 .livro {
   width: 120px;
   text-align: center;
-  background-color: #003080;
+  background-color: var(--fundo-secundario);
   border-radius: 10px;
   padding: 10px;
   transition: transform 0.3s;
+  color: var(--texto-primario);
 }
 
 .livro:hover {
@@ -101,8 +108,8 @@ h2 {
 }
 
 footer {
-  background-color: #001a3d;
-  color: #ccc;
+  background-color: var(--fundo-secundario);
+  color: var(--texto-secundario);
   padding: 40px 20px;
 }
 
@@ -115,7 +122,7 @@ footer {
 
 .coluna h3 {
   margin-bottom: 10px;
-  color: #fff;
+  color: var(--texto-primario);
 }
 
 .coluna ul {
@@ -124,20 +131,119 @@ footer {
 }
 
 .coluna a {
-  color: #ccc;
+  color: var(--texto-secundario);
   text-decoration: none;
   font-size: 14px;
 }
 
 .coluna a:hover {
   text-decoration: underline;
+  color: var(--detalhes);
 }
 
 .linha-vertical {
   width: 2px;
-  background-color: #4db8ff;
+  background-color: var(--hover-e-cards);
   height: auto;
 }
 
+/* Responsive Design for Perfil Page */
+@media (max-width: 1024px) {
+  .perfil {
+    max-width: 90%;
+  }
 
-@import "../global/global.css";
+  .livros-favoritos {
+    max-width: 90%;
+  }
+
+  .livros {
+    gap: 15px;
+  }
+
+  .livro {
+    width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-logado {
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .header-logado nav {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin: 30px 0 15px;
+  }
+
+  .perfil {
+    padding: 30px 15px;
+  }
+
+  #foto-perfil {
+    width: 100px;
+  }
+
+  .perfil form {
+    gap: 12px;
+  }
+
+  .perfil input {
+    padding: 8px;
+  }
+
+  .livros {
+    gap: 12px;
+  }
+
+  .livro {
+    width: 90px;
+  }
+
+  footer {
+    padding: 30px 15px;
+  }
+
+  .colunas {
+    gap: 20px;
+  }
+
+  .linha-vertical {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  .perfil {
+    padding: 20px 10px;
+  }
+
+  #foto-perfil {
+    width: 80px;
+  }
+
+  .livro {
+    width: 80px;
+    padding: 8px;
+  }
+
+  .coluna h3 {
+    font-size: 16px;
+  }
+
+  .coluna a {
+    font-size: 12px;
+  }
+}
