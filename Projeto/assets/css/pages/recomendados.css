@@ -11,7 +11,7 @@ body {
 .main-recomendados {
   display: flex;
   flex-wrap: wrap;
-  color: var(--azul-texto-primario);
+  color: var(--texto-primario);
   width: 1650px;
   height: fit-content;
   gap: 80px;
@@ -31,7 +31,7 @@ body {
     height: fit-content;
     scrollbar-width: none;
     overflow: scroll;
-    background-color: var(--azul-botao);
+    background-color: var(--botao);
     border-radius: 20px;
 
     h2 {
@@ -70,5 +70,98 @@ body {
         }
       }
     }
+  }
+}
+
+/* Responsive Design for Recomendados Page */
+@media (max-width: 1700px) {
+  .main-recomendados,
+  .main-recomendados .cards-recomendados {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    gap: 50px;
+  }
+
+  .main-recomendados {
+    gap: 50px;
+  }
+
+  .main-recomendados h1 {
+    font-size: 42px;
+  }
+
+  .main-recomendados .cards-recomendados {
+    padding: 20px 30px;
+  }
+
+  .main-recomendados .cards-recomendados h2 {
+    font-size: 36px;
+  }
+
+  .main-recomendados .cards-recomendados .livros {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .main-recomendados h1 {
+    font-size: 32px;
+  }
+
+  .main-recomendados .cards-recomendados {
+    padding: 15px 20px;
+  }
+
+  .main-recomendados .cards-recomendados h2 {
+    font-size: 28px;
+  }
+
+  .main-recomendados .cards-recomendados .livros {
+    gap: 30px;
+  }
+
+  .main-recomendados .cards-recomendados .livros a .livro img {
+    width: 200px;
+    height: 300px;
+  }
+
+  .main-recomendados .cards-recomendados .livros a .livro .p-maior {
+    font-size: 24px;
+  }
+
+  .main-recomendados .cards-recomendados .livros a .livro .p-menor {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-recomendados h1 {
+    font-size: 28px;
+  }
+
+  .main-recomendados .cards-recomendados h2 {
+    font-size: 24px;
+  }
+
+  .main-recomendados .cards-recomendados .livros a .livro img {
+    width: 150px;
+    height: 225px;
+  }
+
+  .main-recomendados .cards-recomendados .livros a .livro .p-maior {
+    font-size: 20px;
+  }
+
+  .main-recomendados .cards-recomendados .livros a .livro .p-menor {
+    font-size: 16px;
   }
 }

@@ -4,8 +4,9 @@
 /* body geral */
 
 body {
-  background-color: var(--azul-fundo-primario);
+  background-color: var(--fundo-primario);
   font-family: "Inter", sans-serif;
+  transition: background-color 0.3s ease;
 
   h1,
   h2 {
@@ -14,7 +15,7 @@ body {
 
   a {
     text-decoration: none;
-    color: var(--azul-texto-primario);
+    color: var(--texto-primario);
   }
 }
 
@@ -33,13 +34,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--azul-fundo-secundario);
+  background-color: var(--fundo-secundario);
   width: 100%;
   height: 130px;
   padding: 0 50px;
 
   a {
-    color: var(--azul-texto-primario);
+    color: var(--texto-primario);
     text-decoration: none;
     width: fit-content;
     height: fit-content;
@@ -81,11 +82,12 @@ body {
       border-radius: 4px;
       font-size: 16px;
       font-weight: 700;
-      background-color: var(--azul-botao);
+      background-color: var(--botao);
+      transition: background-color 0.3s ease;
     }
 
     .botao:hover {
-      background-color: var(--azul-hover-e-cards);
+      background-color: var(--hover-e-cards);
     }
   }
 }
@@ -96,7 +98,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
-  background-color: var(--azul-fundo-secundario);
+  background-color: var(--fundo-secundario);
   width: 100%;
   height: 130px;
 
@@ -121,7 +123,7 @@ body {
           font-size: 32px;
           font-weight: 400;
           text-decoration: none;
-          color: var(--azul-texto-primario);
+          color: var(--texto-primario);
           font-family: "Inter", sans-serif;
         }
 
@@ -144,7 +146,7 @@ body {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    background-color: var(--azul-fundo-secundario);
+    background-color: var(--fundo-secundario);
     width: 630px;
     padding: 30px 0;
     gap: 30px;
@@ -159,7 +161,7 @@ body {
       flex-direction: column;
       flex-wrap: wrap;
       gap: 30px;
-      color: var(--azul-texto-primario);
+      color: var(--texto-primario);
 
       .inputs {
         display: flex;
@@ -179,18 +181,21 @@ body {
           height: 50px;
           padding: 15px 20px;
           border-radius: 10px;
-          background-color: var(--azul-fundo-primario);
-          color: var(--azul-texto-primario);
+          background-color: var(--fundo-primario);
+          color: var(--texto-primario);
+          border: 1px solid var(--fundo-perfil-e-input);
+          transition: background-color 0.3s ease;
         }
 
         input::placeholder {
-          color: var(--azul-texto-primario);
+          color: var(--texto-primario);
           font-size: 16px;
+          opacity: 0.7;
         }
 
         input:focus {
           outline: none;
-          background-color: var(--azul-fundo-perfil-e-input);
+          background-color: var(--fundo-perfil-e-input);
         }
       }
       .botao-maior {
@@ -203,13 +208,14 @@ body {
         font-size: 16px;
         font-weight: 700;
         cursor: pointer;
-        background-color: var(--azul-botao);
-        color: var(--azul-texto-primario);
+        background-color: var(--botao);
+        color: var(--texto-primario);
+        transition: background-color 0.3s ease;
         
       }
 
       .botao-maior:hover {
-        background-color: var(--azul-hover-e-cards);
+        background-color: var(--hover-e-cards);
       }
     }
   }
@@ -227,7 +233,7 @@ body {
     gap: 145px;
 
     .texto-principal {
-      color: var(--azul-texto-primario);
+      color: var(--texto-primario);
 
       h3 {
         font-size: 40px;
@@ -269,7 +275,7 @@ body {
       margin-bottom: 28px;
       width: fit-content;
       height: fit-content;
-      color: var(--azul-texto-primario);
+      color: var(--texto-primario);
     }
 
     .dados-livro {
@@ -279,7 +285,7 @@ body {
       justify-content: center;
       width: 1250px;
       height: 475px;
-      background-color: var(--azul-fundo-secundario);
+      background-color: var(--fundo-secundario);
 
       div {
         display: flex;
@@ -292,7 +298,7 @@ body {
           font-size: 24px;
           font-weight: 400;
           width: 570px;
-          color: var(--azul-texto-primario);
+          color: var(--texto-primario);
         }
       }
     }
@@ -301,7 +307,7 @@ body {
   .secao-sinopse {
     display: flex;
     flex-wrap: wrap;
-    color: var(--azul-texto-primario);
+    color: var(--texto-primario);
 
     h3 {
       width: 100%;
@@ -312,14 +318,14 @@ body {
     .linha-branca {
       width: 1725px;
       height: 5px;
-      background-color: var(--azul-texto-primario);
+      background-color: var(--texto-primario);
     }
     .sinopse {
       width: 1720px;
       height: fit-content;
       padding: 50px;
       margin-top: 45px;
-      background-color: var(--azul-fundo-secundario);
+      background-color: var(--fundo-secundario);
 
       .sinopse-texto {
         display: flex;
@@ -343,13 +349,13 @@ body {
       font-size: 40px;
       font-weight: 700;
       margin-bottom: 20px;
-      color: var(--azul-texto-primario);
+      color: var(--texto-primario);
     }
 
     .linha-branca {
       width: 1725px;
       height: 5px;
-      background-color: var(--azul-texto-primario);
+      background-color: var(--texto-primario);
     }
 
     .cards-colecao {
@@ -386,7 +392,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--azul-fundo-secundario);
+  background-color: var(--fundo-secundario);
   width: 100%;
   height: 344px;
 
@@ -407,7 +413,7 @@ footer {
         font-size: 28px;
         font-weight: 500;
         margin-bottom: 60px;
-        color: var(--azul-texto-primario);
+        color: var(--texto-primario);
       }
 
       .lista {
@@ -422,17 +428,17 @@ footer {
             font-weight: 400;
 
             a {
-              color: var(--azul-texto-primario);
+              color: var(--texto-primario);
               text-decoration: none;
             }
             #atual-footer {
               text-decoration: underline;
-              color: var(--azul-detalhes);
+              color: var(--detalhes);
             }
 
             a:hover {
               text-decoration: underline;
-              color: var(--azul-detalhes);
+              color: var(--detalhes);
             }
           }
         }
@@ -442,7 +448,344 @@ footer {
     .linha-vertical {
       width: 4px;
       height: 265px;
-      background-color: var(--azul-detalhes);
+      background-color: var(--detalhes);
     }
+  }
+}
+
+/* Responsive Design - Media Queries */
+
+/* Tablets e telas médias (até 1024px) */
+@media (max-width: 1024px) {
+  .header-nao-logado,
+  .header-logado {
+    padding: 0 20px;
+    height: auto;
+    min-height: 100px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .header-nao-logado .logo h1 {
+    font-size: 36px;
+  }
+
+  .header-nao-logado .logo img,
+  .header-logado #logo-link img {
+    width: 60px;
+    height: 75px;
+  }
+
+  .header-logado nav ul {
+    gap: 20px;
+  }
+
+  .header-logado nav ul li a {
+    font-size: 24px;
+  }
+
+  .main-forms .secao-forms {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .main-forms .secao-forms form .inputs,
+  .main-forms .secao-forms form .inputs input,
+  .main-forms .secao-forms form .botao-maior {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .main-pag-footer {
+    width: 90%;
+    height: auto;
+    margin: 60px auto;
+  }
+
+  .main-pag-footer .container-principal-das-pag-do-footer {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .main-pag-footer .texto-principal h3 {
+    font-size: 32px;
+  }
+
+  .main-pag-footer .texto-principal p {
+    font-size: 20px;
+  }
+
+  .main-pag-footer #logo-maior {
+    max-width: 300px;
+  }
+
+  .main-livros {
+    margin: 40px 20px;
+    gap: 50px;
+  }
+
+  .main-livros .secao-dados-livros {
+    height: auto;
+  }
+
+  .main-livros .secao-dados-livros img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .main-livros .secao-dados-livros h2 {
+    font-size: 36px;
+  }
+
+  .main-livros .secao-dados-livros .dados-livro {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .main-livros .secao-dados-livros .dados-livro div p {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .main-livros .secao-sinopse .linha-branca,
+  .main-livros .secao-colecao .linha-branca {
+    width: 100%;
+  }
+
+  .main-livros .secao-sinopse .sinopse {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .main-livros .secao-sinopse .sinopse .sinopse-texto p {
+    font-size: 24px;
+  }
+
+  .main-livros .secao-colecao .cards-colecao {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  footer {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  footer .colunas {
+    gap: 30px;
+  }
+
+  footer .colunas .coluna {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  footer .colunas .linha-vertical {
+    display: none;
+  }
+
+  footer .colunas .coluna h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  footer .colunas .coluna .lista ul {
+    gap: 20px;
+  }
+
+  footer .colunas .coluna .lista ul li {
+    font-size: 20px;
+  }
+}
+
+/* Smartphones (até 768px) */
+@media (max-width: 768px) {
+  .header-nao-logado,
+  .header-logado {
+    padding: 15px;
+    justify-content: center;
+  }
+
+  .header-nao-logado .logo {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-nao-logado .logo h1 {
+    font-size: 28px;
+  }
+
+  .header-nao-logado .logo img,
+  .header-logado #logo-link img {
+    width: 50px;
+    height: 63px;
+  }
+
+  .header-logado nav {
+    width: 100%;
+  }
+
+  .header-logado nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .header-logado nav ul li a {
+    font-size: 18px;
+  }
+
+  .header-logado #perfil-link img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .body-entrar-e-criar {
+    gap: 50px;
+    padding: 20px;
+  }
+
+  .main-forms .secao-forms {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .main-forms .secao-forms .logo-maior {
+    width: 150px;
+    height: 187px;
+  }
+
+  .main-forms .secao-forms form .inputs label {
+    font-size: 18px;
+  }
+
+  .main-forms .secao-forms form .inputs input {
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .main-pag-footer {
+    width: 95%;
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  .main-pag-footer .texto-principal h3 {
+    font-size: 28px;
+  }
+
+  .main-pag-footer .texto-principal p {
+    font-size: 18px;
+  }
+
+  .main-pag-footer #logo-maior {
+    max-width: 200px;
+  }
+
+  .main-livros {
+    margin: 20px 10px;
+    gap: 30px;
+  }
+
+  .main-livros .secao-dados-livros h2 {
+    font-size: 28px;
+  }
+
+  .main-livros .secao-sinopse h3,
+  .main-livros .secao-colecao h3 {
+    font-size: 28px;
+  }
+
+  .main-livros .secao-sinopse .sinopse {
+    padding: 20px;
+  }
+
+  .main-livros .secao-sinopse .sinopse .sinopse-texto p {
+    font-size: 18px;
+  }
+
+  .main-livros .secao-colecao .cards-colecao .card {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .main-livros .secao-colecao .cards-colecao .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-livros .secao-colecao .cards-colecao .card p {
+    font-size: 24px;
+  }
+
+  footer .colunas .coluna h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  footer .colunas .coluna .lista ul li {
+    font-size: 18px;
+  }
+}
+
+/* Smartphones pequenos (até 480px) */
+@media (max-width: 480px) {
+  .header-nao-logado .logo h1 {
+    font-size: 24px;
+  }
+
+  .header-nao-logado .botoes {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-nao-logado .botoes .botao {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .header-logado nav ul li a {
+    font-size: 16px;
+  }
+
+  .main-forms .secao-forms form .inputs,
+  .main-forms .secao-forms form .inputs input,
+  .main-forms .secao-forms form .botao-maior {
+    max-width: 100%;
+  }
+
+  .main-pag-footer .texto-principal h3 {
+    font-size: 24px;
+  }
+
+  .main-pag-footer .texto-principal p {
+    font-size: 16px;
+  }
+
+  .main-livros .secao-dados-livros h2 {
+    font-size: 24px;
+  }
+
+  .main-livros .secao-sinopse h3,
+  .main-livros .secao-colecao h3 {
+    font-size: 24px;
+  }
+
+  .main-livros .secao-sinopse .sinopse .sinopse-texto p {
+    font-size: 16px;
+  }
+
+  footer .colunas .coluna h3 {
+    font-size: 18px;
+  }
+
+  footer .colunas .coluna .lista ul li {
+    font-size: 16px;
   }
 }

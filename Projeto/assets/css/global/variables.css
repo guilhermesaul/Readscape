@@ -1,4 +1,5 @@
 :root {
+    /* Tema Azul (padrão) */
     --azul-fundo-primario: #0B1D51;
     --azul-fundo-secundario: #11296B;
     --azul-fundo-perfil-e-input: #1E3A8A;
@@ -7,9 +8,55 @@
     --azul-texto-primario: #E5E7EB;
     --azul-texto-secundario: #9CA3AF;
     --azul-detalhes: #FACC15;
+    
+    /* Tema Escuro/Preto */
     --escuro-preto: #000000;
     --escuro-cinza-escuro: #292B2C;
     --escuro-cinza: #555555;
     --escuro-branco: #F0F0F0;
     --escuro-detalhes: #FACC15;
+    
+    /* Tema Vermelho */
+    --vermelho-fundo-primario: #4A0E0E;
+    --vermelho-fundo-secundario: #6B1111;
+    --vermelho-fundo-perfil-e-input: #8A1E1E;
+    --vermelho-botao: #A62222;
+    --vermelho-hover-e-cards: #EB2525;
+    --vermelho-texto-primario: #E5E7EB;
+    --vermelho-texto-secundario: #9CA3AF;
+    --vermelho-detalhes: #FACC15;
+    
+    /* Variáveis de tema ativo */
+    --fundo-primario: var(--azul-fundo-primario);
+    --fundo-secundario: var(--azul-fundo-secundario);
+    --fundo-perfil-e-input: var(--azul-fundo-perfil-e-input);
+    --botao: var(--azul-botao);
+    --hover-e-cards: var(--azul-hover-e-cards);
+    --texto-primario: var(--azul-texto-primario);
+    --texto-secundario: var(--azul-texto-secundario);
+    --detalhes: var(--azul-detalhes);
+}
+
+/* Tema Escuro */
+body[data-theme="dark"] {
+    --fundo-primario: var(--escuro-preto);
+    --fundo-secundario: var(--escuro-cinza-escuro);
+    --fundo-perfil-e-input: var(--escuro-cinza);
+    --botao: var(--escuro-cinza);
+    --hover-e-cards: var(--escuro-cinza-escuro);
+    --texto-primario: var(--escuro-branco);
+    --texto-secundario: #9CA3AF;
+    --detalhes: var(--escuro-detalhes);
+}
+
+/* Tema Vermelho */
+body[data-theme="red"] {
+    --fundo-primario: var(--vermelho-fundo-primario);
+    --fundo-secundario: var(--vermelho-fundo-secundario);
+    --fundo-perfil-e-input: var(--vermelho-fundo-perfil-e-input);
+    --botao: var(--vermelho-botao);
+    --hover-e-cards: var(--vermelho-hover-e-cards);
+    --texto-primario: var(--vermelho-texto-primario);
+    --texto-secundario: var(--vermelho-texto-secundario);
+    --detalhes: var(--vermelho-detalhes);
 }
